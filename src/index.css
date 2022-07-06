@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,16 +8,95 @@
 
 @layer base{
   .header {
-    @apply w-full
+    @apply w-full bg-slate-900 p-3   pl-4 hidden  md:flex items-center 
+     
   }
+  .headerb {
+    @apply w-full bg-slate-700 text-white font-[Nunito] p-2 hidden  md:flex items-center 
+     
+  }
+  .logo {
+    @apply h-7 cursor-pointer 
+  }
+  
+  .search-bar {
+    @apply bg-white  rounded  w-[800px]  flex justify-between
+    
+  }
+  
+  .category {
+    @apply h-10 w-14  flex justify-center items-center rounded-l border-r border-gray-300 bg-gray-100
+    text-[12px] hover:bg-gray-200 cursor-pointer
+  }
+  .search-icon {
+    @apply h-10 w-14 text-2xl flex justify-center items-center hover:bg-orange-400 cursor-pointer  bg-orange-300 rounded-r
+  }
+  .input-search {
+    @apply w-full outline-none h-full font-[Nunito] border-none active:outline-none active:border-none
+  }
+  .input-container {
+    @apply w-full h-10
+  }
+  
+  .location {
+    @apply h-10 p-3 flex flex-col items-center justify-center text-gray-300 text-xs 
+    
+  }
+  .country {
+    @apply font-bold text-white
+  }
+  
+
+  /* header Mobile */
+
+  .logoM {
+    @apply h-5 ml-2 mt-2 cursor-pointer
+  }  
+  .headerM2 {
+    @apply w-full bg-slate-800 p-3 pl-4   md:hidden items-center 
+    flex flex-col gap-y-2 
+  }
+
+  .headerM {
+      @apply w-full bg-slate-800 p-3 pl-4   md:hidden items-center 
+      flex  justify-between 
+    }
+
+  .input-containerM {
+      @apply w-full h-auto rounded
+    }
+
+.search-barM {
+    @apply bg-white pl-3  rounded w-full items-center flex justify-between
+    
+  }
+
+
+
+/* Home */
+.contain{
+ @apply top-96 absolute
+}
+.products1{
+  @apply relative  mx-6  mt-5 grid grid-cols-4 gap-x-5
+}
+.carts{
+  @apply  shadow-xl bg-white p-3
+}
+
+
+/* Footer */
+
 }
 
 
 
 
 
-
-
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 
 
