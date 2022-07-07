@@ -8,12 +8,12 @@ import productsim from '../images/products.jpg'
 
 // import oculus from '../images/mobile/.jpeg'
  
-import { Carousel, font } from 'flowbite-react'
+import { Carousel } from 'flowbite-react'
 import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
-import React, {useState} from 'react'
+import React  from 'react'
 import Products from './Products'
-import FooterCom from './Footer'
-import MobileCart from './MobileCart'
+
+
 import MobileHome from './MobileHome'
 
 function Home() {
@@ -104,7 +104,7 @@ function Home() {
         </div>
         <Products images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg'
             title='Dresses'
-            style='h-72'
+            styleimg='h-72'
         />
         <div className='flex flex-col items-center gap-y-4'>
             <div className=" h-32 w-full p-3 shadow-md bg-white">
@@ -123,22 +123,22 @@ function Home() {
         <Products 
             images='https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg'
             title='Get fit at home'
-            style='h-72'
+            styleimg='h-72'
             />
         <Products 
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Deals_1x._SY304_CB430401028_.jpg'
             title='Deals & Promotions'
-            style='h-72'
+            styleimg='h-72'
             />
         <Products 
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg'
             title='Computers & Accessories'
-            style='h-72'
+            styleimg='h-72'
             />
         <Products 
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg'
             title='Health & Personal Care'
-            style='h-72'
+            styleimg='h-72'
             />
        </div>
 
@@ -181,39 +181,39 @@ function Home() {
         <div className="products1 ">
             <Products 
             title='Shop Laptops & Tablets'
-            style='h-72'
+            styleimg='h-72'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg'
             />
             <Products 
             title='Create with strip light'
-            style='h-72'
+            styleimg='h-72'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg'
             />
             <Products 
             title='Kindle E readers'
-            style='h-72'
+            styleimg='h-72'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg'
             />
             <Products 
             title='New arrivals in Toys'
-            style='h-72'
+            styleimg='h-72'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg'
             />
         </div>
         <div className="products1 ">
             <Products 
             title='Shop Pet supplies'
-            style='h-80'
+            styleimg='h-80'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Pets_1X._SY304_CB639746743_.jpg'
             />
             <Products 
             title='For your Fitness Needs'
-            style='h-80'
+            styleimg='h-80'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg'
             />
             <Products 
             title='Shop activity trackers and smartwatches'
-            style='h-72'
+            styleimg='h-72'
             images='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg'
             />
             <div className="carts">

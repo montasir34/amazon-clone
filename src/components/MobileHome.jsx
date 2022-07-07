@@ -75,7 +75,6 @@ import heal7 from '../images/mobile/71oxtLl-PSL._AC_SS260_.jpg'
 import heal8 from '../images/mobile/81fu16w1sGL._AC_SS260_.jpg'
 import heal9 from '../images/mobile/71HK623s4YL._AC_SS260_.jpg'
 
-import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
 import React from 'react'
 import MobileCart from './MobileCart'
 
