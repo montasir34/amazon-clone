@@ -75,10 +75,11 @@
 
 /* Home */
 .contain{
- @apply top-96 absolute
+ @apply -top-64 relative
+ md:-mb-64
 }
 .products1{
-  @apply relative  mx-6  mt-5 grid grid-cols-4 gap-x-5
+  @apply   mx-6  mt-5 hidden md:grid-cols-4 md:grid   gap-x-5
 }
 .carts{
   @apply  shadow-xl bg-white p-3

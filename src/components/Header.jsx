@@ -111,7 +111,7 @@ function Header() {
           <div className='w-[1040px] gap-x-4 flex'>
             <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>Deals</p>
             <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>Amazon Basics</p>
-            <p className='cursor-pointertext-white font-[Nunito] hover:text-orange-500'>Best Sellers</p>
+            <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>Best Sellers</p>
             <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>Livestreams</p>
             <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>Video</p>
             <p className='cursor-pointer text-white font-[Nunito] hover:text-orange-500'>New Releases</p>

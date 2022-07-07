@@ -6,11 +6,15 @@ import games from '../images/games.jpg'
 import million from '../images/million.jpg'
 import productsim from '../images/products.jpg'
 
-import { Carousel } from 'flowbite-react'
+// import oculus from '../images/mobile/.jpeg'
+ 
+import { Carousel, font } from 'flowbite-react'
 import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
 import React, {useState} from 'react'
 import Products from './Products'
 import FooterCom from './Footer'
+import MobileCart from './MobileCart'
+import MobileHome from './MobileHome'
 
 function Home() {
     function right(){
@@ -23,9 +27,11 @@ function Home() {
     // scroll top
    
   return (
-    <div className= 'bg-slate-200 h-[2450px] '>
-        <div className="md:h-[540px] h-[200px]">
-            <Carousel indicators={false}>
+    <div className= 'bg-slate-200  '>
+        <div className="md:h-[540px] h-[190px]">
+            <Carousel indicators={false}
+                
+            >
                 <div className="flex gradient-mask-b-30 h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                     <img className='' src={chair} alt="" />
                 </div>
@@ -107,7 +113,7 @@ function Home() {
                   <button className='bg-yellow-300 hover:bg-yellow-400 px-16 py-1 rounded-lg'>Sign in securely</button>  
                 </div>
             </div>
-            <div className=" shadow-md">
+            <div className="hidden md:block shadow-md">
                 <img src={million} alt="" />
             </div>
             </div>
@@ -137,11 +143,9 @@ function Home() {
        </div>
 
        
-        <div className='relative'>
-            <div id='slide' className=' overflow-x-scroll relative scrollbar-hide shadow-xl 
-       scroll-smooth  bg-white p-5 w-[1300px] mx-6   mt-5'>
-      
-         <div  className='w-[2800px] transition-all duration-700   flex gap-x-4'>
+        <div className='relative hidden md:block m-6 py-3 bg-white'>
+            <h1 className=' font-extrabold px-3 font-[Nunito] text-2xl'>Top Sellers in Books for you</h1>
+   <div id='slide' className=' mx-3 mt-1 scroll-smooth flex gap-x-4 transition-all scrollbar-hide duration-700 overflow-x-auto'>
             <img className='' src='https://m.media-amazon.com/images/I/91cqEsyjd-L._AC_SY200_.jpg' alt="" />
             <img src="https://m.media-amazon.com/images/I/81EVdWdmOKL._AC_SY200_.jpg" alt="" />
             <img src="https://m.media-amazon.com/images/I/81t-IstQ+ZL._AC_SY200_.jpg" alt="" />
@@ -163,17 +167,17 @@ function Home() {
             <img src="https://m.media-amazon.com/images/I/51OdkvPNE7L._AC_SY200_.jpg" alt="" />
             <img src="https://m.media-amazon.com/images/I/81PR3BDkqWL._AC_SY200_.jpg" alt="" />
             <img src="https://m.media-amazon.com/images/I/91pdllYEUfL._AC_SY200_.jpg" alt="" />
-         </div>
-       </div> 
-       <div className="flex absolute top-16 z-20 mx-6  w-[1300px] justify-between text-xl">
-            <div  onClick={left} className='bg-white px-2 select-none border-2 py-11 rounded-r-lg'>
+        </div>
+        <div className="flex absolute top-1/3 z-20  min-w-full  justify-between text-xl">
+            <div  onClick={left} className='bg-white px-2 shadow-xl select-none border-2 py-11 rounded-r-lg'>
                 <MdArrowBackIosNew className='select-none' />  
             </div>
-            <div  onClick={right} className='bg-white px-2 select-none border-2 py-11 rounded-l-lg'>
+            <div  onClick={right} className='bg-white px-2 shadow-xl select-none border-2 py-11 rounded-l-lg'>
                 <MdArrowForwardIos className='select-none' />
             </div>
+        </div>   
         </div>
-        </div>
+         
         <div className="products1 ">
             <Products 
             title='Shop Laptops & Tablets'
@@ -235,7 +239,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className=' shadow-xl relative  mt-5 bg-white py-8'>
+        <div className=' shadow-xl hidden md:block relative  mt-5 bg-white py-8'>
             <div className='border flex justify-center items-center p-10 mx-2'>
                 <div className='flex justify-center w-60 flex-col'>
                     <h1 className='text-sm text-center mb-1'>See personalized recommendations</h1>
@@ -247,7 +251,7 @@ function Home() {
         </div>
        
         </div>
-       
+       <MobileHome />
     </div>
   )
 }

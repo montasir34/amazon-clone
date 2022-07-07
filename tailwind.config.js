@@ -6,9 +6,13 @@ module.exports = {
   theme: {
     extend: {},
   },
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
     require("tailwind-gradient-mask-image"),
     require('flowbite/plugin'),
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/aspect-ratio'),
 ],
 }

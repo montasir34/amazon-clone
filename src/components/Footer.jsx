@@ -6,16 +6,17 @@ import { Footer } from 'flowbite-react'
 function FooterCom({scrollToTop, visible}) {
   return (
     <div className=''>
-      <div className='w-full hover:bg-slate-600 flex justify-center font-[Nunito] bg-slate-700'  >
+      <div className='w-full hover:bg-slate-600 flex justify-center
+       font-[Nunito] bg-slate-700'  >
         <button className='w-full p-4' onClick={scrollToTop} 
           style={{display: visible ? 'inline' : 'none', color : 'white'}} >
           Back to top
       </button>
       </div>
       <div className='bg-slate-800'>
-        <div className='grid grid-cols-10 font-[Nunito] text-white p-3 bg-slate-800'>
-        <div className='col-span-1'> </div>
-        <div className='col-span-2'>
+        <div className='grid md:grid-cols-10 grid-cols-2 font-[Nunito] text-white p-3 bg-slate-800'>
+        <div className='hidden md:block col-span-1'> </div>
+        <div className=' col-span-1 md:col-span-2'>
           <h1 className=' font-bold'>Get to Know Us</h1>
           <div className="text-gray-400 mt-3 text-sm">
           <p>Carrers</p>
@@ -26,7 +27,7 @@ function FooterCom({scrollToTop, visible}) {
           <p>Amazon Science</p>
           </div>
         </div>
-        <div className='col-span-2'>
+        <div className='col-span-1 md:col-span-2'>
           <h1 className=' font-bold'>Make Money with Us</h1>
           <div className="text-gray-400 mt-3 text-sm">
              <p>Sell products on Amazon</p>
@@ -40,7 +41,7 @@ function FooterCom({scrollToTop, visible}) {
           </div>
          
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <h1 className=' font-bold'>Amazon Payment Products</h1>
           <div className="text-gray-400 mt-3 text-sm">
           <p>Amazon Business Card</p>
@@ -50,7 +51,7 @@ function FooterCom({scrollToTop, visible}) {
           </div>
 
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <h1 className=' font-bold'>Let Us Help You</h1>
           <div className="text-gray-400 mt-3 text-sm">
           <p>Amazon and COVID-19</p>
@@ -70,7 +71,7 @@ function FooterCom({scrollToTop, visible}) {
            <Footer.Copyright
         
           href="#"
-          by="Flowbite™"
+          by="Montaser"
           year={2022} 
         />
          </div>
