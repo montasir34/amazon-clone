@@ -75,13 +75,15 @@ import heal7 from '../images/mobile/71oxtLl-PSL._AC_SS260_.jpg'
 import heal8 from '../images/mobile/81fu16w1sGL._AC_SS260_.jpg'
 import heal9 from '../images/mobile/71HK623s4YL._AC_SS260_.jpg'
 
+
+
 import React from 'react'
 import MobileCart from './MobileCart'
 
 function MobileHome() {
-   
   return (
     <div className='md:hidden'>
+        
          <div className=' scroll-smooth flex gap-x-2 transition-all scrollbar-hide duration-700 overflow-x-auto'>
                 <img className='rounded-xl h-56 select-none' src={laptops} alt="" />
                 <img className='rounded-xl h-56 select-none' src={oculus} alt="" />

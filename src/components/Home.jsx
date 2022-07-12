@@ -6,6 +6,7 @@ import games from '../images/games.jpg'
 import million from '../images/million.jpg'
 import productsim from '../images/products.jpg'
 
+
 // import oculus from '../images/mobile/.jpeg'
  
 import { Carousel } from 'flowbite-react'
@@ -28,6 +29,7 @@ function Home() {
    
   return (
     <div className= 'bg-slate-200  '>
+       
         <div className="md:h-[540px] h-[190px]">
             <Carousel indicators={false}
                 
